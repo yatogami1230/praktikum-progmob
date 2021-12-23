@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bora"
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/icing"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/bl11" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv"
+            android:layout_width="match_parent"
+            android:layout_height="540dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="15dp"
+            card_view:cardBackgroundColor="@color/sakura"
+            card_view:cardCornerRadius="40dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="BIODATA ATLET PB.RIZKY"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="10pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30pt"
+                android:text="Nama: "
+                android:textColor="@color/black"
+                android:textSize="8pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TampilNama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40pt"
+                android:text="Nama"
+                android:textSize="7pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="55pt"
+                android:text="Email: "
+                android:textColor="@color/black"
+                android:textSize="8pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TampilEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="65pt"
+                android:text="Email"
+                android:textSize="7pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="80pt"
+                android:text="No Wa: "
+                android:textColor="@color/black"
+                android:textSize="8pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TampilNowa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="90pt"
+                android:text="No Wa"
+                android:textSize="7pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="105pt"
+                android:text="Alamat: "
+                android:textColor="@color/black"
+                android:textSize="8pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TampilAlamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="115pt"
+                android:text="Alamat"
+                android:textSize="7pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="130pt"
+                android:text="Jenis Kelamin: "
+                android:textColor="@color/black"
+                android:textSize="8pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TampilJK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="140pt"
+                android:text="Jenis Kelamin"
+                android:textSize="7pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="155pt"
+                android:text="Tingkat: "
+                android:textColor="@color/black"
+                android:textSize="8pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TampilTingkat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="165pt"
+                android:text="Tingkat"
+                android:textSize="7pt" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="180pt"
+                android:text="Umur: "
+                android:textColor="@color/black"
+                android:textSize="8pt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TampilUmur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="190pt"
+                android:text="Umur"
+                android:textSize="7pt" />
+
+            <Button
+                android:id="@+id/btnkembali"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="210pt"
+                android:background="@drawable/button"
+                android:backgroundTint="@color/yellow1"
+                android:onClick="Kembali"
+                android:text="BACK"
+                android:textColor="@color/black"
+                android:textSize="7pt"
+                card_view:backgroundTint="#F7FD04" />
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</RelativeLayout>

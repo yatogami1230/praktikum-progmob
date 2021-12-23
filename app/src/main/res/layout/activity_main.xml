@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:background="@color/bora"
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="531dp"
+        android:background="@color/icing"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="770dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/latar"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/bl" />
+
+                <!--Judul-->
+                <TextView
+                    android:id="@+id/judul"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="Form Pendaftaran Atlet Bulutangkis"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="700dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="50dp"
+                    android:paddingTop="30dp"
+                    android:paddingRight="50dp"
+                    android:paddingBottom="100dp">
+
+
+                    <!--Input Nama-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nama"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/nama"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:height="45dp"
+                        android:background="@drawable/form"
+                        android:paddingLeft="15dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <!--Input Email-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Email"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="3dp"
+                        android:height="45dp"
+                        android:background="@drawable/form"
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="15dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <!--Input No WA-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No WA"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/nowa"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="3dp"
+                        android:height="45dp"
+                        android:background="@drawable/form"
+                        android:inputType="number"
+                        android:paddingLeft="15dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <!--Alamat-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Alamat"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/alamat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:height="45dp"
+                        android:background="@drawable/form"
+                        android:paddingLeft="15dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <!--Jenis Kelamin-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jenis Kelamin"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/rg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="1dp">
+
+                        <RadioButton
+                            android:id="@+id/laki"
+                            android:layout_width="132dp"
+                            android:layout_height="30dp"
+                            android:text="Laki-Laki" />
+
+                        <RadioButton
+                            android:id="@+id/perempuan"
+                            android:layout_width="132dp"
+                            android:layout_height="30dp"
+                            android:text="Perempuan" />
+                    </RadioGroup>
+
+                    <!--Tingkatan-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tingkat"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <CheckBox
+                        android:id="@+id/beginer"
+                        android:layout_width="135dp"
+                        android:layout_height="30dp"
+                        android:text="Beginer" />
+
+                    <CheckBox
+                        android:id="@+id/pro"
+                        android:layout_width="135dp"
+                        android:layout_height="30dp"
+                        android:text="Professional" />
+
+                    <!--Umur-->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Umur"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <SeekBar
+                        android:id="@+id/umur"
+                        android:layout_width="264dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:max="40"
+                        android:min="15" />
+
+                    <TextView
+                        android:id="@+id/um"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="110dp"
+                        android:text="Tahun"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <!--Button-->
+                    <Button
+                        android:layout_width="130dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/button"
+                        android:onClick="kirim"
+                        android:text="Daftar"
+                        android:id="@+id/daftar"
+                        android:textColor="@color/black"
+                        app:backgroundTint="#F7FD04" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
